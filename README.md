@@ -7,7 +7,7 @@ Fake JSON-Schema validator
 
 ## DO NOT USE IT!
 
-It was created as an illustration that passing all tests from  the "official" [JSON-Schema-Test-Suite](https://github.com/json-schema-org/JSON-Schema-Test-Suite) means that the validator can be used - this one always returns `true` in all other cases, not covered by tests.
+It was created as an illustration that passing all tests from  the "official" [JSON-Schema-Test-Suite](https://github.com/json-schema-org/JSON-Schema-Test-Suite) does not mean that the validator can be used - this one always returns `true` in all cases not covered by the tests.
 
 Use [Ajv](https://github.com/epoberezkin/ajv) instead.
 

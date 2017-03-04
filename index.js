@@ -21,17 +21,22 @@ function compile(schema) {
   var schemaStr = JSON.stringify(schema);
   var compiled = this._schemas[schemaStr];
   if (compiled) return compiled;
-  var schemaResults = results[schemaStr] || (results[schemaStr] = {});
-  return (this._schemas[schemaStr] = v);
+  var schemaResults = results[schemaStr];
+  compiled = this._schemas[schemaStr] = schemaResults ? v : valid;
+  return compiled;
 
   function v(data) {
     var dataStr = JSON.stringify(data);
     var res = schemaResults[dataStr];
-    if (res === undefined)
-      res = schemaResults[dataStr] = true;
+    if (res === undefined) res = true;
     v.errors = res ? null : ['some error'];
     return res;
   }
+}
+
+
+function valid() {
+  return true;
 }
 
 

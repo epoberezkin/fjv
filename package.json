@@ -1,6 +1,6 @@
 {
   "name": "fjv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fake JSON-Schema validator",
   "main": "index.js",
   "scripts": {
