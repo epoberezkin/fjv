@@ -5,6 +5,13 @@ Fake JSON-Schema validator
 [![npm version](https://badge.fury.io/js/fjv.svg)](https://www.npmjs.com/package/fjv)
 
 
+## DO NOT USE IT!
+
+It was created as an illustration that passing all tests from  the "official" [JSON-Schema-Test-Suite](https://github.com/json-schema-org/JSON-Schema-Test-Suite) means that the validator can be used - this one always returns `true` in all other cases, not covered by tests.
+
+Use [Ajv](https://github.com/epoberezkin/ajv) instead.
+
+
 ## Install
 
 ```
